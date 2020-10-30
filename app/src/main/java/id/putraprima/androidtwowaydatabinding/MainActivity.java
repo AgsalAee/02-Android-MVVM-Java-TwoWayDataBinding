@@ -20,11 +20,5 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
         Mahasiswa mhs = new Mahasiswa();
         binding.setMahasiswa(mhs);
-        binding.btnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                binding.txtResult.setText(binding.editTextNama.getText().toString());
-            }
-        });
     }
 }
